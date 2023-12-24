@@ -1,0 +1,67 @@
+//미디어 쿼리 적용 예정
+
+//desktop (1920/1080~ )
+
+.input-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%); // 정중앙에 위치
+  width: 70%; // 전체화면에 대한 너비
+
+  input {
+    width: 100%; // container에 대한 너비
+    display: inline-block; // 버튼 요소 가로정렬 위해 inline-block
+    border-style: none; // 주변 스타일 제거
+    background-color: transparent; //배경 투명하게
+    font-size: 30px;
+    font-weight: 800;
+    border-bottom: 1px solid rgb(255, 255, 255); // input 태그 별 밑줄
+    margin-top: 2%; // input 태그 별 margin
+    &::placeholder {
+      // placeholder
+      color: #3d3d3d;
+    }
+  }
+
+  .phone-number-container,
+  .pw-container {
+    margin-top: 40px; //container 별 margin
+  }
+
+  .email-form,
+  .phone-number-form,
+  .email-verify-form,
+  .phone-number-verify-form {
+    // 이메일, 전화번호 form
+    width: 80%;
+  }
+
+  .email-verify-request-btn,
+  .phone-number-verify-request-btn,
+  .email-verify-btn,
+  .phone-number-verify-btn {
+    width: 20%;
+    height: 9%;
+    transform: translateY(15%);
+    color: #3d3d3d;
+    font-size: 1.5vw;
+    font-weight: 800;
+    overflow: hidden;
+    border-style: none;
+    border-radius: 13px;
+    background: #171717;
+  }
+
+  .register-btn {
+    margin-top: 70px;
+    width: 100%;
+    color: #3d3d3d;
+    font-size: 30px;
+    font-weight: 800;
+    height: 79px;
+    border-style: none;
+    border-radius: 13px;
+    background: #171717;
+  }
+}

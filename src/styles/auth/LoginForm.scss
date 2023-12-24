@@ -1,0 +1,66 @@
+//미디어 쿼리 적용 예정
+
+//desktop (1920/1080~ )
+.login-form {
+  position: fixed;
+  left: 30%;
+  top: 198px;
+  transform: translateX(-50%);
+
+  .input-wrapper {
+    position: relative;
+    height: 50px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: #ffffff;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &.id-input::after {
+      width: 260%;
+    }
+
+    &.pw-input::after {
+      width: 260%;
+      top: 102px;
+      height: 1px;
+    }
+  }
+
+  .id-form,
+  .pw-form {
+    position: relative;
+    color: #3d3d3d;
+    border-style: none;
+    background-color: black;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .pw-form {
+    display: block;
+    top: 53px;
+  }
+
+  .login-btn {
+    position: relative;
+    top: 105px;
+    width: 261%;
+    height: 69px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: #171717;
+    color: #3d3d3d;
+    border-style: none;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+}
